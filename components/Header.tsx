@@ -1,20 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
-import NavItems from "./NavItems"
-import UserDropDown from "./UserDropDown"
 
 const Header = () => {
     return (
         <header className="sticky top-0 header">
             <div className="container header-wrapper">
-                <Link href="">
-                    <Image src="/assets/icons/logo.svg" alt="logo" width={140} height={32} className="h-8 w-auto cursor-pointer" />
+                <Link href="" className="flex items-center justify-center gap-4 text-white text-base sm:text-2xl font-bold">
+                    <Image src="/assets/logo.png" alt="logo" width={150} height={40} className="h-8 w-auto cursor-pointer" />
+                    MarketRadar
                 </Link>
-                <nav className="hidden sm:block">
-                    <NavItems />
+                <nav>
+                    <p className="text-xs sm:text-lg text-white font-bold">STAY AHEAD OF THE MARKET</p>
                 </nav>
 
-                <UserDropDown />
             </div>
         </header>
     )
