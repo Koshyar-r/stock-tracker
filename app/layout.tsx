@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Singalist",
-  description: "Track real-time stock prices with Singalist",
+  title: "MarketRadar",
+  description: "Stay Ahead of the Market with Real-Time Stock Insights",
 };
 
 export default function RootLayout({
